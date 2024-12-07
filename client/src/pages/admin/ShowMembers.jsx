@@ -150,7 +150,6 @@ const ShowMembers = () => {
                 <th className="px-6 py-3 border-b bg-gray-50 text-left text-sm font-semibold text-gray-600">
                   Actions
                 </th>
-              
               </tr>
             </thead>
             <tbody>
@@ -175,18 +174,17 @@ const ShowMembers = () => {
                   <td className="px-6 py-4 border-b text-sm text-gray-700 space-x-2">
                     <button
                       onClick={() => handleUpdate(member)}
-                      className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                      className="border-2 border-gray-700 hover:text-gray-50 px-4 py-2 rounded hover:bg-gray-700 text-gray-700 transition"
                     >
                       Update
                     </button>
                     <button
                       onClick={() => handleDelete(member._id)}
-                      className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition"
+                      className="hover:bg-red-500 text-red-500 border-2 border-red-500 hover:text-gray-50 px-4 py-2 rounded  transition"
                     >
                       Delete
                     </button>
                   </td>
-                  
                 </tr>
               ))}
             </tbody>

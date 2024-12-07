@@ -108,7 +108,7 @@ const CreateService = () => {
             {image && (
               <div className="mt-4">
                 <img
-                  src={image}
+                  src={URL.createObjectURL(image)}
                   alt="Service Preview"
                   className="w-32 h-32 object-cover rounded-lg"
                 />

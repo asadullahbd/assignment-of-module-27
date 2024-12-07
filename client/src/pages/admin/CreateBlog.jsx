@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
-import Loader from "../../components/Loader"
+import Loader from "../../components/Loader";
+
 const CreateBlog = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -19,16 +20,13 @@ const CreateBlog = () => {
       return;
     }
 
-    // image
-    // const imageURL = await imageToDataURL(image);
     const form = new FormData();
     form.append("image", image);
     form.append("title", title);
     form.append("description", description);
 
-    //  API call
     try {
-      setLoading(true)
+      setLoading(true);
       const response = await axios.post(
         `${import.meta.env.VITE_API_URL}/api/v1/admin/blogs`,
         form,
@@ -46,10 +44,9 @@ const CreateBlog = () => {
     } catch (error) {
       console.log(error.response);
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
 
-    // Reset form
     setTitle("");
     setDescription("");
     setImage(null);
@@ -78,7 +75,7 @@ const CreateBlog = () => {
               id="title"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700"
               placeholder="Enter blog title"
             />
           </div>
@@ -96,7 +93,7 @@ const CreateBlog = () => {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               rows="5"
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700"
               placeholder="Enter blog description"
             ></textarea>
           </div>
@@ -115,7 +112,7 @@ const CreateBlog = () => {
               name="image"
               accept="image/*"
               onChange={handleImageUpload}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-700"
             />
             {image && (
               <div className="mt-4">
@@ -131,7 +128,7 @@ const CreateBlog = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
+            className="w-full bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-gray-800 transition"
           >
             Create Blog
           </button>

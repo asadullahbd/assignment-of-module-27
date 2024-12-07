@@ -9,12 +9,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg">
+    <nav className="bg-gray-50 text-gray-900 shadow-lg">
       <div className="container max-w-7xl mx-auto flex items-center justify-between py-4 px-6 border-b border-gray-800">
         {/* Logo */}
         <div className="text-3xl font-bold tracking-wide">
-          <Link to="/" className="hover:text-yellow-300 transition">
-            Agency<span className="text-yellow-300">Blog</span>
+          <Link to="/" className="text-gray-700 hover:text-gray-900 transition font-serif">
+            LOGO
           </Link>
         </div>
 
@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="block lg:hidden">
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none"
+            className="text-gray-900 focus:outline-none"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,14 +43,14 @@ const Navbar = () => {
 
         {/* Menu Links for Desktop */}
         <ul
-          className={`lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 text-lg mt-4 lg:mt-0 absolute bg-indigo-600 w-full top-12 left-0 p-5 z-50 lg:p-0 lg:w-auto lg:bg-transparent lg:static ${
+          className={`lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 text-lg mt-4 lg:mt-0 absolute bg-gray-50 w-full top-12 left-0 p-5 z-50 lg:p-0 lg:w-auto lg:bg-transparent lg:static ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
           <li>
             <Link
               to="/"
-              className="hover:text-yellow-300 transition font-medium"
+              className="hover:text-blue-800 transition font-medium"
             >
               Home
             </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/about"
-              className="hover:text-yellow-300 transition font-medium"
+              className="hover:text-blue-800 transition font-medium"
             >
               About
             </Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/blog"
-              className="hover:text-yellow-300 transition font-medium"
+              className="hover:text-blue-800 transition font-medium"
             >
               Blog
             </Link>
@@ -74,7 +74,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/services"
-              className="hover:text-yellow-300 transition font-medium"
+              className="hover:text-blue-800 transition font-medium"
             >
               Services
             </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/contact"
-              className="hover:text-yellow-300 transition font-medium"
+              className="hover:text-blue-800 transition font-medium"
             >
               Contact
             </Link>
@@ -90,7 +90,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/admin"
-              className="bg-yellow-400 text-gray-700 py-2 px-4 rounded font-medium"
+              className="py-2 px-4 rounded font-medium  hover:bg-gray-700 hover:text-gray-50 border-2 border-gray-700 transition"
             >
               Admin
             </Link>

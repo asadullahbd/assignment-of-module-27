@@ -71,7 +71,7 @@ const CreateMembers = () => {
       }
     } catch (error) {
       console.log(error.response);
-      alert("Member create failed")
+      alert("Member create failed");
     } finally {
       setLoading(false);
     }
@@ -214,7 +214,7 @@ const CreateMembers = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
+            className="w-full bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-gray-800 transition"
           >
             Create Member
           </button>

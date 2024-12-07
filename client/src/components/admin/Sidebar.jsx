@@ -28,7 +28,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
   };
   return (
     <div
-      className={`w-64 bg-blue-700 text-white flex flex-col justify-between absolute h-full md:static z-10 ${
+      className={`w-64 bg-gray-50 text-gray-700 flex flex-col justify-between absolute h-full md:static z-10 ${
         isOpen ? "" : "hidden"
       }`}
     >
@@ -52,8 +52,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <NavLink
               to="/admin/blogs/create"
               className={({ isActive }) =>
-                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-blue-600 ${
-                  isActive ? "bg-blue-800" : ""
+                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-gray-700 hover:text-gray-50 ${
+                  isActive ? "bg-gray-700 text-gray-50" : ""
                 }`
               }
             >
@@ -65,8 +65,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <NavLink
               to="/admin/blogs/list"
               className={({ isActive }) =>
-                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-blue-600 ${
-                  isActive ? "bg-blue-800" : ""
+                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-gray-700 hover:text-gray-50 ${
+                  isActive ? "bg-gray-700 text-gray-50" : ""
                 }`
               }
             >
@@ -78,8 +78,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <NavLink
               to="/admin/services/create"
               className={({ isActive }) =>
-                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-blue-600 ${
-                  isActive ? "bg-blue-800" : ""
+                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-gray-700 hover:text-gray-50 ${
+                  isActive ? "bg-gray-700 text-gray-50" : ""
                 }`
               }
             >
@@ -91,8 +91,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <NavLink
               to="/admin/services/list"
               className={({ isActive }) =>
-                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-blue-600 ${
-                  isActive ? "bg-blue-800" : ""
+                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-gray-700 hover:text-gray-50 ${
+                  isActive ? "bg-gray-700 text-gray-50" : ""
                 }`
               }
             >
@@ -104,8 +104,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <NavLink
               to="/admin/members/create"
               className={({ isActive }) =>
-                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-blue-600 ${
-                  isActive ? "bg-blue-800" : ""
+                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-gray-700 hover:text-gray-50 ${
+                  isActive ? "bg-gray-700 text-gray-50" : ""
                 }`
               }
             >
@@ -117,8 +117,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <NavLink
               to="/admin/members/list"
               className={({ isActive }) =>
-                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-blue-600 ${
-                  isActive ? "bg-blue-800" : ""
+                `flex items-center space-x-2 px-4 py-3 rounded-lg hover:bg-gray-700 hover:text-gray-50 ${
+                  isActive ? "bg-gray-700 text-gray-50" : ""
                 }`
               }
             >
@@ -133,7 +133,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       <div className="p-6">
         <button
           onClick={logoutHandler}
-          className="flex items-center space-x-2 px-4 py-3 rounded-lg bg-red-600 hover:bg-red-700"
+          className="flex items-center space-x-2 px-4 py-3 rounded-lg bg-red-600 hover:bg-red-700 text-gray-50"
         >
           <FaSignOutAlt />
           <span>Logout</span>

@@ -168,5 +168,5 @@ This project is licensed under the **MIT License**.
 ---
 
 ## Author
-**Istiak Ahammad**  
-[MERN Stack Developer](https://github.com/mhistiak3)
+**asad**  
+[MERN Stack Developer](https://github.com/asadullahbd)

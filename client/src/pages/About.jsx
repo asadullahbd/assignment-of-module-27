@@ -55,7 +55,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <Team/>
+      <Team />
     </div>
   );
 };

@@ -41,7 +41,7 @@ console.log(teamMembers);
                 <img
                   src={member.image.imageURL}
                   alt={member.name}
-                  className="w-32 h-32 object-cover rounded-full mx-auto mb-6 border-4 border-blue-500"
+                  className="w-32 h-32 object-cover rounded-full mx-auto mb-6 border-4 border-gray-900"
                 />
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2 text-center">
                   {member.name}
