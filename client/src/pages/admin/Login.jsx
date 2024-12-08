@@ -42,6 +42,8 @@ const Login = () => {
     }
   };
 
+
+  
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="w-full sm:w-96 bg-white p-8 rounded-lg shadow-md">
